@@ -16,8 +16,11 @@ public class SellerService {
     public String addSeller(SellerRequestDto sellerRequestDto){
 
         Seller seller = SellerConvertor.SellerRequestDtoToSeller(sellerRequestDto);
-        sellerRepo.save(seller);
+        seller=sellerRepo.save(seller);
 
-        return "Congrats! Now you can sell on Chine Market !!!";
+        String response= "Congrats! Now you can sell on E- Market !!!" +
+                "Your details are as mention below"+
+                seller.toString();
+        return response;
     }
 }

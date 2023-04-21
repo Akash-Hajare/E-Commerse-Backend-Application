@@ -26,3 +26,13 @@ public class SellerController {
 
     // find sellers of a particular age
 }
+/*
+         http://localhost:8080:seller/add
+
+         {
+            "name" : "Puma" ,
+            "mobNo" : "9898986932" ,
+            "email" : "pumaindia@gmail.com"
+            "panNo" : "AERZ457896LK"
+         }
+ */

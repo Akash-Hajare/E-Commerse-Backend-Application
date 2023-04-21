@@ -26,7 +26,7 @@ public class CustomerService {
         // set cart in customer
         customer.setCart(cart);
 
-        customerRepository.save(customer);
-        return "Congrats !! Welcome to China Market.";
+        customer=customerRepository.save(customer);
+        return "Congrats !! Welcome to E -Market.";
     }
 }

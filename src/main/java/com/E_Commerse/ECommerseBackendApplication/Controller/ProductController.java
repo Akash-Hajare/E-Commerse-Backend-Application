@@ -18,7 +18,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @PostMapping("/add")
+    @PostMapping("/add") // http:localhost:8080/product/add
     public ResponseEntity addProduct(@RequestBody ProductRequestDto productRequestDto){
 
         ProductResponseDto productResponseDto;
@@ -30,10 +30,26 @@ public class ProductController {
 
         return new ResponseEntity(productResponseDto,HttpStatus.ACCEPTED);
     }
+/*
+          http://localhost:8080/product/add
 
+       {
+          "sellerId": 5,
+          "productName": "Realme c2 5G",
+          "price": 10000,
+          "quantity": 100,
+          "productCategory": "ELECTRONICS"
+      }
+
+
+ */
     @GetMapping("/get/category/{productCategory}")
     public List<ProductResponseDto> getAllProductsByCategory(@PathVariable("productCategory") ProductCategory productCategory){
 
         return productService.getProductsByCategory(productCategory);
     }
 }
+/*
+         http://localhost8080/product/get/category/SPORTS
+
+ */

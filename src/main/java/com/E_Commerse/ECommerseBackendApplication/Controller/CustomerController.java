@@ -30,3 +30,12 @@ public class CustomerController {
 
     // update customer
 }
+/*
+      http://localhost8080/customer/add
+    {
+       "name": "Akash Hajare",
+       "age": 25,
+       " email": "akashhajared11@gmail.com",
+       "mobNo": "9898321578"
+   }
+ */
