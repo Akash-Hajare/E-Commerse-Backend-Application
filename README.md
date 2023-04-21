@@ -1,9 +1,7 @@
 # E-Commerse_MarketPlace-Backend-Application
 
-
-
-# Book-My-Show-Backend_Application
-- Book My Show is a movie ticket booking system project
+- E-Commerse MarketPlace is backend project where
+sellers list their products and buyers can buy products on one platform
 - Its a backend code written using Spring-Boot
 - It consists of Different Layers like Controller, Service, Repository , DTO(Data Transfer Object)
 - These layers in the project increases its code maintanablity, understadability and readablity
