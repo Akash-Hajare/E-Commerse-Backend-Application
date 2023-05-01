@@ -6,11 +6,13 @@ sellers list their products and buyers can buy products on one platform
 - It consists of Different Layers like Controller, Service, Repository , DTO(Data Transfer Object)
 - These layers in the project increases its code maintanablity, understadability and readablity
 
+# Database Schema (ER Diagram)
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/Ecom%20Schems.png)
+
 # Design of the Application
 ![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-22.png)
 ![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-11.png)
-# Database Schema (ER Diagram)
-![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/Ecom%20Schems.png)
+
 
 # Teck-Stack Used : 
  - Spring-Boot
@@ -22,6 +24,11 @@ sellers list their products and buyers can buy products on one platform
 # API's
 ![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/Ecom%20APIs.png)
 
+# Seller Registration Email
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/ecom-email1.png)
+
+# Customer Registration Email
+![login]()
 ## Setup the Application
 - Create a database bookmyshow using the sql file ecom.sql provided in src/main/resources.
 - Open src/main/resources/application.properties and change spring.datasource.username and spring.datasource.password properties as per your MySQL installation.
