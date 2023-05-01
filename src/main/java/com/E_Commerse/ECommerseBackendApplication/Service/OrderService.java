@@ -10,6 +10,8 @@ import com.E_Commerse.ECommerseBackendApplication.RequestDto.OrderRequestDto;
 import com.E_Commerse.ECommerseBackendApplication.ResponseDto.OrderResponseDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,8 +23,8 @@ public class OrderService {
     @Autowired
     ProductRepository productRepository;
 
-//    @Autowired
-//    JavaMailSender emailSender;
+   @Autowired
+   JavaMailSender emailSender;
 
     public OrderResponseDto placeOrder(OrderRequestDto orderRequestDto) throws Exception {
         Customer customer;
@@ -83,14 +85,19 @@ public class OrderService {
                 .build();
 
         // send an email
-        String text = "Congrats your order with total value "+order.getTotalCost()+" has been placed";
+        String text = "Congrats your order with total value "+order.getTotalCost()+" has been placed"+
+                "\nOrder Details are mentioned below"+
+                "\nCustomer name "+order.getCustomer()+
+                "\nTotal Cost : "+order.getTotalCost()+
+                "\nTotal Orders "+order.getOrderedItems()+
+                "\nOrder date "+order.getOrderDate();
 
-//        SimpleMailMessage message = new SimpleMailMessage();
-//        message.setFrom("backendavengers@gmail.com");
-//        message.setTo(customer.getEmail());
-//        message.setSubject("Order Placed Notification");
-//        message.setText(text);
-//        emailSender.send(message);
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("backendspringrocks@gmail.com");
+        message.setTo("akashhajared11@gmail.com");
+        message.setSubject("Order Placed Notification");
+        message.setText(text);
+        emailSender.send(message);
 
         return orderResponseDto;
     }

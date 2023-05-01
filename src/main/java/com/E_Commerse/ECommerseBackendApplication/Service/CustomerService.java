@@ -6,6 +6,8 @@ import com.E_Commerse.ECommerseBackendApplication.Models.Customer;
 import com.E_Commerse.ECommerseBackendApplication.Repository.CustomerRepository;
 import com.E_Commerse.ECommerseBackendApplication.RequestDto.CustomerRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,6 +15,8 @@ public class CustomerService {
 
     @Autowired
     CustomerRepository customerRepository;
+    @Autowired
+    JavaMailSender emailSender;
 
     public String addCustomer(CustomerRequestDto customerRequestDto){
 
@@ -25,8 +29,22 @@ public class CustomerService {
 
         // set cart in customer
         customer.setCart(cart);
+         //email
+        String response="Congrats !! Welcome to E -Market."+
+                "\nCustomer Details are mentioned below"+
+                "\nCustomer Name "+customer.getName()+
+                "\nAge "+customer.getAge()+
+                "\nEmail id "+customer.getEmail()+
+                "\nMobile Number "+customer.getMobNo();
 
         customer=customerRepository.save(customer);
-        return "Congrats !! Welcome to E -Market.";
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("backendspringrocks@gmail.com");
+        message.setTo("akashhajared11@gmail.com");
+        message.setSubject("Customer Registration Notification");
+        message.setText(response);
+        emailSender.send(message);
+
+        return response;
     }
 }
