@@ -28,7 +28,7 @@ sellers list their products and buyers can buy products on one platform
 ![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/ecom-email1.png)
 
 # Customer Registration Email
-![login]()
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/ecom-email2.png)
 ## Setup the Application
 - Create a database bookmyshow using the sql file ecom.sql provided in src/main/resources.
 - Open src/main/resources/application.properties and change spring.datasource.username and spring.datasource.password properties as per your MySQL installation.
