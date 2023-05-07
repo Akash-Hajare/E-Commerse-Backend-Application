@@ -7,11 +7,12 @@ sellers list their products and buyers can buy products on one platform
 - These layers in the project increases its code maintanablity, understadability and readablity
 
 # Database Schema (ER Diagram)
-![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/Ecom%20Schems.png)
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/ecom-db.png)
 
 # Design of the Application
-![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-22.png)
-![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-11.png)
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-1.png)
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-2.png)
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/design-3.png)
 
 
 # Teck-Stack Used : 
