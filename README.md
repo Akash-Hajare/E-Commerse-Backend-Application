@@ -23,7 +23,7 @@ sellers list their products and buyers can buy products on one platform
  - Maven as a build tool
 
 # API's
-![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/Ecom%20APIs.png)
+![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/Ecom%20API.png)
 
 # Seller Registration Email
 ![login](https://github.com/Akash-Hajare/E-Commerse_MarketPlace-Backend-Application/blob/master/Screenshots/ecom-email1.png)
