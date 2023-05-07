@@ -15,8 +15,8 @@ public class CustomerService {
 
     @Autowired
     CustomerRepository customerRepository;
-    @Autowired
-    JavaMailSender emailSender;
+//    @Autowired
+//    JavaMailSender emailSender;
 
     public String addCustomer(CustomerRequestDto customerRequestDto){
 
@@ -36,14 +36,14 @@ public class CustomerService {
                 "\nAge "+customer.getAge()+
                 "\nEmail id "+customer.getEmail()+
                 "\nMobile Number "+customer.getMobNo();
-
-        customer=customerRepository.save(customer);
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("backendspringrocks@gmail.com");
-        message.setTo("akashhajared11@gmail.com");
-        message.setSubject("Customer Registration Notification");
-        message.setText(response);
-        emailSender.send(message);
+//
+//        customer=customerRepository.save(customer);
+//        SimpleMailMessage message = new SimpleMailMessage();
+//        message.setFrom("backendspringrocks@gmail.com");
+//        message.setTo("akashhajared11@gmail.com");
+//        message.setSubject("Customer Registration Notification");
+//        message.setText(response);
+//        emailSender.send(message);
 
         return response;
     }
